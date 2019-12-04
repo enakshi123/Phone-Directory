@@ -6,10 +6,10 @@ class App extends Component {
 	render(){
 		return (
     		<div>
-          <Header/>
+          <Header title="Phone directory"/>
         <button>Add</button>
         <div>
-          <span>Name</span><br />
+          <span>Name </span>
           <span>Phone</span>
         </div>
     		</div>
