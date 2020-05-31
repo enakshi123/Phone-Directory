@@ -12,12 +12,14 @@ class PhoneDirectory extends Component {
                 {
                     id: 1,
                     name: "Shilpa Bhat",
-                    phone: "9999999999"
+                    phone: "9999999999",
+                    email: "shilpa14@gmail.com"
                 },
                 {
                     id: 2,
                     name: "Srishti Gupta",
-                    phone: "8888888888"
+                    phone: "8888888888",
+                    email: "gupta.srishti34@gmail.com"
                 }
             ]
         }
@@ -50,7 +52,7 @@ class PhoneDirectory extends Component {
     render() {
         return (
             // <AddSubscriber addSubscriberHandler={this.addSubscriberHandler} />
-            <Router>
+            <Router basename="/phone-directory">
                 <div>
                     <Route exact path="/" render={(props) => <ShowSubscribers {...props} subscribersList={this.state.subscribersList} deleteSubscriberHandler={this.deleteSubscriberHandler} />} />
                     <Route exact path="/add" render={({history}, props) => <AddSubscriber history={history} {...props} addSubscriberHandler={this.addSubscriberHandler} />} />
